@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+body{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card {
+    background: #eeeeee;
+    border-radius: 30px;
+ width: 80vw;
+ height: 100vh;
+ position: relative;
+ left: 10%;
+}
+h1 {
+    color: #0a7e9b;
+   padding-top: 13%;
+   font-size: 32pt;
+   user-select: none;
+}
+.cal {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+
+}
+input {
+    color: #4f5157;
+    text-shadow: 1px 1px 1px #00c3ff4b, -1px -1px 1px #00ff9d69;
+    padding: 7px;
+    font-size: 14pt;
+    font-weight: 500;
+    border-radius: 5px;
+    outline: 0px solid #ca2a2a;
+    outline-offset: 10px;
+    border: none;
+    box-shadow: 1px 1px 5px #19a0fa, -1px -1px 10px #19fa9c;
+    background: #dadada;
+    transition: .55s;
+}
+input:focus {
+    padding: 11px 11px;
+}
+input::placeholder {
+    color: #4d4747;
+    text-shadow: none;
+    text-align: center;
+}
+
+
+p{
+    font-size: 15pt;
+    margin: 0 15px;
+}
+p1 {
+    font-size: 15pt;
+    margin: 20px;
+    color: #44444477;
+}
+
+button {
+    margin: 25px 10px;
+    padding: 4px 6px;
+    font-size: 18pt;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #33333373;
+    box-shadow: 1px 1px 5px #727272;
+    transition: .6s;
+}
+button:hover {
+    transform: scale(1.2);
+    background: #333;
+    color: #fff;
+    border: 2px solid #ffffff94;
+    box-shadow: 1px 1px 5px #013947, -1px -1px 10px #19cdfa;
+}
+.reset{
+    padding: 8px 40px;
+    margin-top: 20px;
+}
+
+.reset:hover {
+    transform: scale(1.2);
+    background: #333;
+    color: #f87e7e;
+    border: 2px solid #ffffff94;
+    box-shadow: 1px 1px 5px #470101, -1px -1px 10px #fa1919;
+}
+.resultado{
+    font-size: 20pt;
+    font-weight: 700;
+    color: #19cdfa;
+}

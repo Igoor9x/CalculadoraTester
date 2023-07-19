@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="card">
+        <h1>Calculadora Tester</h1>
+        <div class="cal">
+            <input class="number1" type="number"
+            placeholder="Insira o 1° numero">
+            <p></p>
+             <input class="number2" type="number" 
+              placeholder="Insira o 2° numero">
+        </div>
+        <p1> Escolha uma opção abaixo!</p1>
+        <div class="btns">
+            <button type="submit" value="somar" onclick="somar()">Somar</button>
+            <button type="submit" value="subtrair" onclick="subtrair()">Subtrair</button>
+            <button type="submit" value="multiplicar" onclick="multiplicar()">Multiplicar</button>
+            <button type="submit" value="dividir" onclick="dividir()">Dividir</button>
+            <button type="submit" value="porcent" onclick="porCento()">Porcentagem</button>
+        </div>
+        <div class="resultado"> 0</div>
+
+    <button class="reset" type="reset" value="reset" onclick="resetar()">Resetar</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
