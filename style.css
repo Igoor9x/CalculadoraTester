@@ -7,37 +7,43 @@ box-sizing: border-box;
 font-family: 'Poppins', sans-serif;
 }
 body{
-    align-items: center;
+    display: flex; 
     justify-content: center;
-    text-align: center;
 }
-
 .card {
+    display: flex;
+    flex-direction: column;
     background: #eeeeee;
-    border-radius: 30px;
- width: 80vw;
- height: 100vh;
- position: relative;
- left: 10%;
+    border-radius: 30px; 
+    height: 100vh;
 }
 h1 {
     color: #0a7e9b;
    padding-top: 13%;
    font-size: 32pt;
    user-select: none;
+   text-align: center;
 }
+
 .cal {
-    position: relative;
-    display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
     padding: 40px;
-
+}
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
 }
 input {
-    color: #4f5157;
+    width: 65%;
+    height: 35%;
+     color: #4f5157;
     text-shadow: 1px 1px 1px #00c3ff4b, -1px -1px 1px #00ff9d69;
-    padding: 7px;
+    padding: 9px;
     font-size: 14pt;
     font-weight: 500;
     border-radius: 5px;
@@ -55,19 +61,22 @@ input::placeholder {
     color: #4d4747;
     text-shadow: none;
     text-align: center;
+    font-size: 11pt;
 }
-
-
 p{
     font-size: 15pt;
     margin: 0 15px;
 }
 p1 {
+    text-align: center;
     font-size: 15pt;
-    margin: 20px;
-    color: #44444477;
+    color: #f3111177;
 }
-
+.btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 button {
     margin: 25px 10px;
     padding: 4px 6px;
@@ -86,11 +95,25 @@ button:hover {
     border: 2px solid #ffffff94;
     box-shadow: 1px 1px 5px #013947, -1px -1px 10px #19cdfa;
 }
+.resultado{
+    font-size: 20pt;
+    font-weight: 700;
+    padding: 0 10px;
+    color: #19cdfa;
+    text-align: center;
+}
+#reset {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
 .reset{
     padding: 8px 40px;
-    margin-top: 20px;
+    margin: 0 auto;
 }
-
 .reset:hover {
     transform: scale(1.2);
     background: #333;
@@ -98,8 +121,23 @@ button:hover {
     border: 2px solid #ffffff94;
     box-shadow: 1px 1px 5px #470101, -1px -1px 10px #fa1919;
 }
-.resultado{
-    font-size: 20pt;
-    font-weight: 700;
-    color: #19cdfa;
+.number1, .number2{
+    text-align: center;
+}
+
+@media (max-width: 625px){
+
+    .card{
+        width: 94vw;
+    }
+    h1{
+        font-size: 22pt;
+    }
+    button {
+        margin: 15px 5px;
+        font-size: 14pt;
+    }
+    .resultado{
+    font-size: 17pt;
+    }
 }
